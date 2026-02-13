@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.container {
+  margin-top: 80px;
+}
+
+h1 {
+  font-size: 42px;
+  color: white;
+}
+
+p {
+  color: white;
+  font-size: 18px;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  background-color: #ff4b91;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ff1e6d;
+}
+
+#specialMessage {
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.gallery {
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+/* Falling hearts animation */
+.heart {
+  position: fixed;
+  top: -10px;
+  color: red;
+  font-size: 20px;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
